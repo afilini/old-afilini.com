@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Bitcoin researcher, currently working @ BHB Network">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <title>Alekos Filini - @afilini</title>
+
+  <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+<body>
+<div class="container-fluid" id="main-container">
+  <div class="row">
+    <canvas id="canvas-webgl" class="col-lg-7 col-sm-12"></canvas>
+
+    <div id="info-div" class="col col-lg-5 col-sm-12">
+      <div class="row" style="margin-top: 3vh;">
+        <div class="col">
+          <h1 class="my-animated fadeIn" style="animation-delay: 3.6s;">Alekos Filini - @afilini</h1>
+          <h2 class="my-animated fadeIn" style="animation-delay: 3.8s;">Bitcoin researcher, currently working @ <a
+            href="http://bhb.network" target="_blank">BHB</a></h2>
+
+          <p class="my-animated fadeIn" style="animation-delay: 4.4s; margin-top: 28px;">9222 07BA 3642 BE16 0216 73D2
+            5E8A
+            FC30 34FD FA4F</p>
+          <p class="my-animated fadeIn" style="animation-delay: 4.6s;"><a id="obfuscate-addr" href="#">alekos.filini[at]gmail.com</a>
+          </p>
+          <p class="my-animated fadeIn" style="animation-delay: 4.8s;"><a href="https://twitter.com/afilini"
+                                                                          target="_blank">twitter.com/afilini</a></p>
+          <p class="my-animated fadeIn" style="animation-delay: 5.0s;"><a href="https://github.com/afilini"
+                                                                          target="_blank">github.com/afilini</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row lower-menu my-animated fadeIn" style="animation-delay: 5.0s;">
+    <div class="col-3" style="animation-delay: 5.0s;">
+      <a href="#" id="donate-link">donate</a>
+    </div>
+    <div class="col-3" style="animation-delay: 5.0s;">
+      <a href="https://github.com/afilini/afilini.com" target="_blank">sources</a>
+    </div>
+    <div class="col-3" style="animation-delay: 5.0s;">
+      <a href="#" id="credits-link">credits</a>
+    </div>
+    <div class="col-3" style="animation-delay: 5.0s;">
+      <a href="#" id="audio-link">mute</a>
+    </div>
+  </div>
+</div>
+
+<canvas id="hidden-canvas"></canvas> <!-- TODO: move this somewhere else -->
+<form id="mobile-keyboard">
+  <input type="text" autocomplete="off" style="display: block; position: absolute; top: -9999px;">
+</form>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bower_components/three/build/three.min.js"></script>
+<script src="/bower_components/webfontloader/webfontloader.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/lib/jsqr-1.0.2.min.js"></script>
+
+<script src="scripts/interpreter.js"></script>
+<script src="scripts/commands.js"></script>
+<script src="scripts/god.js"></script>
+<script src="scripts/terminal.js"></script>
+<script src="scripts/render.js"></script>
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

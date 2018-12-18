@@ -1,0 +1,104 @@
+html,body {
+  height: 100%;
+  background-color: black;
+  color: white;
+
+  font-family: Ubuntu Mono, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+#main-container {
+  height: 100%;
+}
+
+#main-container > .row:first-child {
+  height: calc(100% - 2em);
+}
+
+#canvas-webgl {
+  z-index: 1;
+  padding: 0;
+}
+
+@media (max-width: 767px) { /*TODO: test */
+  #info-div::before {
+    background: linear-gradient(
+      to top,
+      hsl(0, 0%, 0%) 0%,
+      hsla(0, 0%, 0%, 0.738) 19%,
+      hsla(0, 0%, 0%, 0.541) 34%,
+      hsla(0, 0%, 0%, 0.382) 47%,
+      hsla(0, 0%, 0%, 0.278) 56.5%,
+      hsla(0, 0%, 0%, 0.194) 65%,
+      hsla(0, 0%, 0%, 0.126) 73%,
+      hsla(0, 0%, 0%, 0.075) 80.2%,
+      hsla(0, 0%, 0%, 0.042) 86.1%,
+      hsla(0, 0%, 0%, 0.021) 91%,
+      hsla(0, 0%, 0%, 0.008) 95.2%,
+      hsla(0, 0%, 0%, 0.002) 98.2%,
+      hsla(0, 0%, 0%, 0) 100%
+    ) !important;
+
+    height:     8.3vh !important;
+    width:     100% !important;
+    top:        -8.3vh !important;
+    left:       0 !important;
+  }
+
+  #canvas-webgl {
+    height: 65% !important;
+  }
+}
+
+#info-div::before {
+  background: linear-gradient(
+    to left,
+    hsl(0, 0%, 0%) 0%,
+    hsla(0, 0%, 0%, 0.738) 19%,
+    hsla(0, 0%, 0%, 0.541) 34%,
+    hsla(0, 0%, 0%, 0.382) 47%,
+    hsla(0, 0%, 0%, 0.278) 56.5%,
+    hsla(0, 0%, 0%, 0.194) 65%,
+    hsla(0, 0%, 0%, 0.126) 73%,
+    hsla(0, 0%, 0%, 0.075) 80.2%,
+    hsla(0, 0%, 0%, 0.042) 86.1%,
+    hsla(0, 0%, 0%, 0.021) 91%,
+    hsla(0, 0%, 0%, 0.008) 95.2%,
+    hsla(0, 0%, 0%, 0.002) 98.2%,
+    hsla(0, 0%, 0%, 0) 100%
+  );
+
+  display:    block;
+  content:    '';
+  position:   absolute;
+  width:      8.3vw;
+  height:     100%;
+  top:        0;
+  left:       -8.3vw;
+}
+
+#info-div {
+  z-index: 2;
+}
+
+#hidden-canvas {
+  display: none;
+}
+
+a[href] {
+  color: white;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1.35em;
+  line-height: 1em;
+  margin-bottom: 0.25em;
+}
+
+.my-animated {
+  display: none;
+}
+
+.lower-menu {
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "personal-website",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "^4.1.3",
+    "animate.css": "^3.7.0",
+    "ubuntumono-googlefont": "*",
+    "three": "*",
+    "webfontloader": "^1.6.28"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.min.css",
+        "dist/js/bootstrap.min.js"
+      ]
+    },
+    "three": {
+      "main": [
+        "build/three.min.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
