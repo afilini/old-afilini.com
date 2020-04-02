@@ -11,7 +11,7 @@ class Command {
 
 function whoamiHandler(argc, argv, stdout, done) {
   stdout('Alekos Filini - @afilini');
-  stdout('Engineering Intern @ Blockstream');
+  stdout('Bitcoin Developer - Magical Bitcoin');
   stdout('');
   stdout('9222 07BA 3642 BE16 0216 73D2 5E8A FC30 34FD FA4F');
   stdout('alekos.filini[at]gmail.com');

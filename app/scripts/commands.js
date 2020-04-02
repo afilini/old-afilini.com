@@ -35,9 +35,7 @@ const donateCommand = new Command('donate', 'Generates a new Bitcoin address', (
   }
 );
 
-const creditsCommand = new Command('credits', 'A huge shout-out to all the open source stuff I used in this project', (argc, argv, stdout, done) => {
-  stdout('This website would have never been possible without:');
-  stdout('');
+const creditsCommand = new Command('credits', 'Awesome open-source stuff used in this website', (argc, argv, stdout, done) => {
   stdout('CodeMyUI\'s "GLSL Glitch":      https://gist.github.com/CodeMyUI/57ee8509af603222de60d104b4559b21');
   stdout('jQuery:                        https://jquery.com');
   stdout('Bootstrap:                     https://getboostrap.com');
@@ -56,7 +54,7 @@ const unmuteCommand = new Command('unmute', 'Un-mutes the background music', (ar
   done();
 });
 
-const bitcoinCommand = new Command('bitcoin-cli', 'Some cool bitcoin utils', (argc, argv, stdout, done) => {
+const bitcoinCommand = new Command('bitcoin-cli', 'Cool bitcoin utils', (argc, argv, stdout, done) => {
   function printHelp() {
     stdout('Bitcoin command line interface. Available commands:');
     stdout('');
