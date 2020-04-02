@@ -1,5 +1,5 @@
 const donateCommand = new Command('donate', 'Generates a new Bitcoin address', (argc, argv, stdout, done) => {
-    const addr = '3B3M6GtTEWCEjo1xXaoi8vLnuoGxep1rVA';
+    const addr = '3BiqY87TnJ9FiTAeHUWD4WQZb55cPQfeAK';
     stdout('Bitcoin address: ' + addr);
 
     const qr = new JSQR();
