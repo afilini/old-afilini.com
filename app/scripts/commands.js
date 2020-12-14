@@ -46,14 +46,6 @@ const creditsCommand = new Command('credits', 'Awesome open-source stuff used in
   done();
 });
 
-const muteCommand = new Command('mute', 'Mutes the background music', (argc, argv, stdout, done) => {
-  done();
-});
-
-const unmuteCommand = new Command('unmute', 'Un-mutes the background music', (argc, argv, stdout, done) => {
-  done();
-});
-
 const bitcoinCommand = new Command('bitcoin-cli', 'Cool bitcoin utils', (argc, argv, stdout, done) => {
   function printHelp() {
     stdout('Bitcoin command line interface. Available commands:');

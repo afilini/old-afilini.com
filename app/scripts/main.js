@@ -13,9 +13,7 @@ $(document).ready(() => {
       renderer.init();
 
       renderer.terminal.interpreter.addCommand('donate', donateCommand);
-      renderer.terminal.interpreter.addCommand('mute', muteCommand);
-      renderer.terminal.interpreter.addCommand('unmute', unmuteCommand);
-      renderer.terminal.interpreter.addCommand('bitcoin-cli', bitcoinCommand);
+      // renderer.terminal.interpreter.addCommand('bitcoin-cli', bitcoinCommand);
 
       renderer.terminal.interpreter.addCommand('credits', creditsCommand);
 
@@ -25,8 +23,6 @@ $(document).ready(() => {
 
       writers['credits'] = God.fromText(renderer.terminal, 'credits', GOD_TYPE_RANDOM,  0.1);
       writers['donate'] = God.fromText(renderer.terminal, 'donate', GOD_TYPE_RANDOM,  0.1);
-      writers['mute'] = God.fromText(renderer.terminal, 'mute', GOD_TYPE_RANDOM,  0.1);
-      writers['unmute'] = God.fromText(renderer.terminal, 'unmute', GOD_TYPE_RANDOM,  0.1);
 
       $('.my-animated').addClass('animated').removeClass('my-animated');
       renderer.postEffect.startGlitch(0.6, 3.0);
@@ -46,19 +42,5 @@ $(document).ready(() => {
     e.preventDefault();
 
     writers['credits'].resetAndStart();
-  });
-
-  let audioEnabled = true; // TODO: move out with the audio logic
-  let audioLink = $('#audio-link');
-
-  audioLink.click((e) => {
-    e.preventDefault();
-
-    const str = audioEnabled ? 'mute' : 'unmute';
-    writers[str].resetAndStart();
-
-    audioEnabled = !audioEnabled;
-
-    audioLink.html(audioEnabled ? 'mute' : 'unmute');
   });
 });
